@@ -1,8 +1,8 @@
 #pragma once
 
 #include "crypto/cryptonight.h"
-#include "xmrstak/backend/miner_work.hpp"
-#include "xmrstak/backend/iBackend.hpp"
+#include "backend/miner_work.hpp"
+#include "backend/iBackend.hpp"
 
 #include <iostream>
 #include <thread>

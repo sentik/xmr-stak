@@ -7,7 +7,7 @@ extern "C" {
 
 #include <stddef.h>
 #include <inttypes.h>
-#include "xmrstak/backend/cryptonight.hpp"
+#include "backend/cryptonight.hpp"
 
 
 typedef struct {

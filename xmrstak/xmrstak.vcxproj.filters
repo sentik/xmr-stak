@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="backend">
+      <UniqueIdentifier>{960647ac-364a-455e-948a-c897dc5c43f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{85996428-28e3-4b31-b4cb-fda3d454ced7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{5f505df7-8de3-4d1c-9ecf-76bcc685476f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{6aee634e-5ba9-4517-826d-7da7bb20e997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rapidjson">
+      <UniqueIdentifier>{9eddd1e6-9f13-4d71-b825-e69915faf687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rapidjson\error">
+      <UniqueIdentifier>{be07a021-8717-4e7b-b157-502391d6d816}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rapidjson\internal">
+      <UniqueIdentifier>{884a3892-5696-47d9-ade8-2fbbc08cf484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rapidjson\msinttypes">
+      <UniqueIdentifier>{b6078987-70a2-45fa-ab73-b6943aaf2542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="backend\cpu">
+      <UniqueIdentifier>{99834b97-d360-41bd-8292-79ef758b11a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="backend\cpu\crypto">
+      <UniqueIdentifier>{5d25fb26-f1dd-4917-9ae9-92c66b86a556}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cli\cli-miner.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\console.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\executor.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\telemetry.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\utility.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="net\jpsock.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\socket.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="http\httpd.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="http\webdesign.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="jconf.cpp" />
+    <ClCompile Include="version.cpp" />
+    <ClCompile Include="backend\backendConnector.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\globalStates.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\cpu\hwlocMemory.cpp">
+      <Filter>backend\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\cpu\minethd.cpp">
+      <Filter>backend\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\cpu\crypto\c_blake256.c">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\cpu\crypto\c_groestl.c">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\cpu\crypto\c_jh.c">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\cpu\crypto\c_keccak.c">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\cpu\crypto\c_skein.c">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\cpu\crypto\cryptonight_common.cpp">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\cpu\jconf_cpu.cpp">
+      <Filter>backend\cpu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="misc\configEditor.hpp">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\console.hpp">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\environment.hpp">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\executor.hpp">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\jext.hpp">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\telemetry.hpp">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\thdq.hpp">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\uac.hpp">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\utility.hpp">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="net\jpsock.hpp">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\msgstruct.hpp">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\socket.hpp">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\socks.hpp">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\allocators.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\document.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\encodedstream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\encodings.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\filereadstream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\filewritestream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\fwd.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\istreamwrapper.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\memorybuffer.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\memorystream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\ostreamwrapper.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\pointer.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\prettywriter.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\rapidjson.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\reader.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\schema.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\stream.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\stringbuffer.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\writer.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\biginteger.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\diyfp.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\dtoa.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\ieee754.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\itoa.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\meta.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\pow10.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\regex.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\stack.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\strfunc.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\strtod.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\swap.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\error\en.h">
+      <Filter>rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\error\error.h">
+      <Filter>rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\msinttypes\inttypes.h">
+      <Filter>rapidjson\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\msinttypes\stdint.h">
+      <Filter>rapidjson\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="http\httpd.hpp">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="http\webdesign.hpp">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="donate-level.hpp" />
+    <ClInclude Include="jconf.hpp" />
+    <ClInclude Include="params.hpp" />
+    <ClInclude Include="version.hpp" />
+    <ClInclude Include="backend\backendConnector.hpp">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cryptonight.hpp">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\globalStates.hpp">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\iBackend.hpp">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\miner_work.hpp">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\plugin.hpp">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\autoAdjust.hpp">
+      <Filter>backend\cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\autoAdjustHwloc.hpp">
+      <Filter>backend\cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\hwlocMemory.hpp">
+      <Filter>backend\cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\minethd.hpp">
+      <Filter>backend\cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\crypto\c_blake256.h">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\crypto\c_groestl.h">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\crypto\c_jh.h">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\crypto\c_keccak.h">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\crypto\c_skein.h">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\crypto\cryptonight.h">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\crypto\cryptonight_aesni.h">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\crypto\groestl_tables.h">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\crypto\hash.h">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\crypto\int-util.h">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\crypto\skein_port.h">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\crypto\soft_aes.hpp">
+      <Filter>backend\cpu\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\cpu\jconf_cpu.hpp">
+      <Filter>backend\cpu</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.tpl" />
+    <None Include="backend\cpu\config.tpl">
+      <Filter>backend\cpu</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -2,10 +2,10 @@
 
 #include "thdq.hpp"
 #include "telemetry.hpp"
-#include "xmrstak/backend/iBackend.hpp"
-#include "xmrstak/misc/environment.hpp"
-#include "xmrstak/net/msgstruct.hpp"
-#include "xmrstak/donate-level.hpp"
+#include "backend/iBackend.hpp"
+#include "misc/environment.hpp"
+#include "net/msgstruct.hpp"
+#include "donate-level.hpp"
 
 #include <atomic>
 #include <array>

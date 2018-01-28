@@ -1,6 +1,6 @@
 #pragma once
 
-#include "xmrstak/params.hpp"
+#include "params.hpp"
 
 #include <stdlib.h>
 #include <string>

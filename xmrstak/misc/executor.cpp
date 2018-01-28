@@ -21,21 +21,21 @@
   *
   */
 
-#include "xmrstak/jconf.hpp"
+#include "jconf.hpp"
 #include "executor.hpp"
-#include "xmrstak/net/jpsock.hpp"
+#include "net/jpsock.hpp"
 
 #include "telemetry.hpp"
-#include "xmrstak/backend/miner_work.hpp"
-#include "xmrstak/backend/globalStates.hpp"
-#include "xmrstak/backend/backendConnector.hpp"
-#include "xmrstak/backend/iBackend.hpp"
+#include "backend/miner_work.hpp"
+#include "backend/globalStates.hpp"
+#include "backend/backendConnector.hpp"
+#include "backend/iBackend.hpp"
 
-#include "xmrstak/jconf.hpp"
-#include "xmrstak/misc/console.hpp"
-#include "xmrstak/donate-level.hpp"
-#include "xmrstak/version.hpp"
-#include "xmrstak/http/webdesign.hpp"
+#include "jconf.hpp"
+#include "misc/console.hpp"
+#include "donate-level.hpp"
+#include "version.hpp"
+#include "http/webdesign.hpp"
 
 #include <thread>
 #include <string>

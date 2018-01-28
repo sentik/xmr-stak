@@ -1,9 +1,9 @@
 #pragma once
 
-#include "xmrstak/misc/console.hpp"
-#include "xmrstak/misc/configEditor.hpp"
-#include "xmrstak/params.hpp"
-#include "xmrstak/backend/cryptonight.hpp"
+#include "misc/console.hpp"
+#include "misc/configEditor.hpp"
+#include "params.hpp"
+#include "backend/cryptonight.hpp"
 
 #ifdef _WIN32
 #include <windows.h>
@@ -15,6 +15,7 @@
 
 #include <hwloc.h>
 #include <stdio.h>
+#include "xmrstak/jconf.hpp"
 
 
 namespace xmrstak
@@ -100,7 +101,7 @@ private:
 	size_t hashMemSize;
 	size_t halfHashMemSize;
 
-	std::vector<uint32_t> results;
+	std::vector<size_t> results;
 
 	template<typename func>
 	inline void findChildrenByType(hwloc_obj_t obj, hwloc_obj_type_t type, func lambda)

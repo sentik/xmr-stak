@@ -24,10 +24,10 @@
 #include "jconf.hpp"
 #include "params.hpp"
 
-#include "xmrstak/misc/console.hpp"
-#include "xmrstak/misc/jext.hpp"
-#include "xmrstak/misc/console.hpp"
-#include "xmrstak/misc/utility.hpp"
+#include "misc/console.hpp"
+#include "misc/jext.hpp"
+#include "misc/console.hpp"
+#include "misc/utility.hpp"
 
 #include <stdio.h>
 #include <stdlib.h>

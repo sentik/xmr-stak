@@ -1,8 +1,8 @@
-#include "xmrstak/backend/cpu/hwlocMemory.hpp"
+#include "backend/cpu/hwlocMemory.hpp"
 
 #ifndef CONF_NO_HWLOC
 
-#include "xmrstak/misc/console.hpp"
+#include "misc/console.hpp"
 
 #include <hwloc.h>
 

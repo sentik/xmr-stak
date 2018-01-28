@@ -1,7 +1,7 @@
 #pragma once
 
 #ifdef _WIN32
-#include "xmrstak/misc/console.hpp"
+#include "misc/console.hpp"
 
 #include <string>
 #include <windows.h>
@@ -22,18 +22,29 @@ BOOL IsElevated()
 	return fRet;
 }
 
+static std::wstring AsMbStr(const char* str)
+{
+	std::wstring wc(strlen(str), L'#');
+	mbstowcs(&wc[0], str, strlen(str));
+	return wc;
+}
+
 BOOL SelfElevate(const char* my_path, const std::string& params)
 {
 	if (IsElevated())
+	{
 		return FALSE;
+	}
+
+
 
 	SHELLEXECUTEINFO shExecInfo = { 0 };
 	shExecInfo.cbSize = sizeof(SHELLEXECUTEINFO);
 	shExecInfo.fMask = SEE_MASK_NOCLOSEPROCESS;
 	shExecInfo.hwnd = NULL;
-	shExecInfo.lpVerb = "runas";
-	shExecInfo.lpFile = my_path;
-	shExecInfo.lpParameters = params.c_str();
+	shExecInfo.lpVerb = L"runas";
+	shExecInfo.lpFile = AsMbStr(my_path).c_str();
+	shExecInfo.lpParameters = AsMbStr(params.c_str()).c_str();
 	shExecInfo.lpDirectory = NULL;
 	shExecInfo.nShow = SW_SHOW;
 	shExecInfo.hInstApp = NULL;

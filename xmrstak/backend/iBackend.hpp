@@ -1,6 +1,6 @@
 #pragma once
 
-#include "xmrstak/backend/globalStates.hpp"
+#include "backend/globalStates.hpp"
 
 #include <atomic>
 #include <cstdint>

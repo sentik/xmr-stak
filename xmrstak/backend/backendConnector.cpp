@@ -26,9 +26,9 @@
 #include "miner_work.hpp"
 #include "globalStates.hpp"
 #include "plugin.hpp"
-#include "xmrstak/misc/environment.hpp"
-#include "xmrstak/misc/console.hpp"
-#include "xmrstak/params.hpp"
+#include "misc/environment.hpp"
+#include "misc/console.hpp"
+#include "params.hpp"
 
 #include "cpu/minethd.hpp"
 #ifndef CONF_NO_CUDA

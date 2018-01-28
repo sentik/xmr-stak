@@ -29,10 +29,10 @@
 #include "socks.hpp"
 #include "socket.hpp"
 
-#include "xmrstak/misc/executor.hpp"
-#include "xmrstak/jconf.hpp"
-#include "xmrstak/misc/jext.hpp"
-#include "xmrstak/version.hpp"
+#include "misc/executor.hpp"
+#include "jconf.hpp"
+#include "misc/jext.hpp"
+#include "version.hpp"
 
 using namespace rapidjson;
 

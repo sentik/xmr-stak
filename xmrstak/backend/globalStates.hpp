@@ -1,8 +1,8 @@
 #pragma once
 
 #include "miner_work.hpp"
-#include "xmrstak/misc/environment.hpp"
-#include "xmrstak/misc/console.hpp"
+#include "misc/environment.hpp"
+#include "misc/console.hpp"
 
 #include <atomic>
 

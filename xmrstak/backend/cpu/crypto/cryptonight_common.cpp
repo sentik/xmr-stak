@@ -30,8 +30,8 @@ extern "C"
 }
 #include "cryptonight.h"
 #include "cryptonight_aesni.h"
-#include "xmrstak/backend/cryptonight.hpp"
-#include "xmrstak/jconf.hpp"
+#include "backend/cryptonight.hpp"
+#include "jconf.hpp"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -75,7 +75,7 @@ void (* const extra_hashes[4])(const void *, size_t, char *) = {do_blake_hash, d
 #ifdef _WIN32
 BOOL bRebootDesirable = FALSE; //If VirtualAlloc fails, suggest a reboot
 
-BOOL AddPrivilege(TCHAR* pszPrivilege)
+BOOL AddPrivilege(const LPCWSTR pszPrivilege)
 {
 	HANDLE           hToken;
 	TOKEN_PRIVILEGES tp;
@@ -135,11 +135,12 @@ BOOL AddLargePageRights()
 	if (LsaOpenPolicy(NULL, &attributes, POLICY_ALL_ACCESS, &handle) == 0) 
 	{
 		LSA_UNICODE_STRING lockmem;
-		lockmem.Buffer = L"SeLockMemoryPrivilege";
+
+		lockmem.Buffer = const_cast<wchar_t*>(std::wstring(L"SeLockMemoryPrivilege").c_str());
 		lockmem.Length = 42;
 		lockmem.MaximumLength = 44;
 
-		PLSA_UNICODE_STRING rights = NULL;
+		PLSA_UNICODE_STRING rights = nullptr;
 		ULONG cnt = 0;
 		BOOL bHasRights = FALSE;
 		if (LsaEnumerateAccountRights(handle, user->User.Sid, &rights, &cnt) == 0)
@@ -147,7 +148,7 @@ BOOL AddLargePageRights()
 			for (size_t i = 0; i < cnt; i++)
 			{
 				if (rights[i].Length == lockmem.Length &&
-					memcmp(rights[i].Buffer, lockmem.Buffer, 42) == 0)
+					memcmp(rights[i].Buffer, lockmem.Buffer, lockmem.Length) == 0)
 				{
 					bHasRights = TRUE;
 					break;
@@ -174,7 +175,7 @@ size_t cryptonight_init(size_t use_fast_mem, size_t use_mlock, alloc_msg* msg)
 	if(use_fast_mem == 0)
 		return 1;
 
-	if(AddPrivilege(TEXT("SeLockMemoryPrivilege")) == 0)
+	if(AddPrivilege(L"SeLockMemoryPrivilege") == 0)
 	{
 		if(AddLargePageRights())
 		{

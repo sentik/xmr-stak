@@ -21,7 +21,7 @@
   *
   */
 
-#include "xmrstak/misc/console.hpp"
+#include "misc/console.hpp"
 
 #include <time.h>
 #include <stdio.h>

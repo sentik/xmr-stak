@@ -1,6 +1,6 @@
 #pragma once
 
-#include "xmrstak/backend/iBackend.hpp"
+#include "backend/iBackend.hpp"
 #include "msgstruct.hpp"
 
 #include <mutex>

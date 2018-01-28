@@ -26,10 +26,10 @@
 
 #include "httpd.hpp"
 #include "webdesign.hpp"
-#include "xmrstak/net/msgstruct.hpp"
-#include "xmrstak/misc/console.hpp"
-#include "xmrstak/misc/executor.hpp"
-#include "xmrstak/jconf.hpp"
+#include "net/msgstruct.hpp"
+#include "misc/console.hpp"
+#include "misc/executor.hpp"
+#include "jconf.hpp"
 
 #include <stdlib.h>
 #include <stdio.h>

@@ -23,19 +23,19 @@
 
 #include "crypto/cryptonight_aesni.h"
 
-#include "xmrstak/misc/console.hpp"
-#include "xmrstak/backend/iBackend.hpp"
-#include "xmrstak/backend//globalStates.hpp"
-#include "xmrstak/misc/configEditor.hpp"
-#include "xmrstak/params.hpp"
+#include "misc/console.hpp"
+#include "backend/iBackend.hpp"
+#include "backend//globalStates.hpp"
+#include "misc/configEditor.hpp"
+#include "params.hpp"
 #include "jconf.hpp"
 
-#include "xmrstak/misc/executor.hpp"
+#include "misc/executor.hpp"
 #include "minethd.hpp"
-#include "xmrstak/jconf.hpp"
+#include "jconf_cpu.hpp"
 
 #include "hwlocMemory.hpp"
-#include "xmrstak/backend/miner_work.hpp"
+#include "backend/miner_work.hpp"
 
 #ifndef CONF_NO_HWLOC
 #   include "autoAdjustHwloc.hpp"

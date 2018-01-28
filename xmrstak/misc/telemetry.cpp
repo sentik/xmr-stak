@@ -22,7 +22,7 @@
   */
 
 #include "telemetry.hpp"
-#include "xmrstak/net/msgstruct.hpp"
+#include "net/msgstruct.hpp"
 
 #include <cmath>
 #include <cstring>

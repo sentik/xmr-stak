@@ -2,11 +2,11 @@
 
 #include "jconf.hpp"
 
-#include "xmrstak/misc/console.hpp"
-#include "xmrstak/jconf.hpp"
-#include "xmrstak/misc/configEditor.hpp"
-#include "xmrstak/params.hpp"
-#include "xmrstak/backend/cryptonight.hpp"
+#include "misc/console.hpp"
+#include "jconf.hpp"
+#include "misc/configEditor.hpp"
+#include "params.hpp"
+#include "backend/cryptonight.hpp"
 #include <string>
 
 #ifdef _WIN32

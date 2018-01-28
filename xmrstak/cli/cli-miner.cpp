@@ -21,20 +21,20 @@
   *
   */
 
-#include "xmrstak/misc/executor.hpp"
-#include "xmrstak/backend/miner_work.hpp"
-#include "xmrstak/backend/globalStates.hpp"
-#include "xmrstak/backend/backendConnector.hpp"
-#include "xmrstak/jconf.hpp"
-#include "xmrstak/misc/console.hpp"
-#include "xmrstak/donate-level.hpp"
-#include "xmrstak/params.hpp"
-#include "xmrstak/misc/configEditor.hpp"
-#include "xmrstak/version.hpp"
-#include "xmrstak/misc/utility.hpp"
+#include "misc/executor.hpp"
+#include "backend/miner_work.hpp"
+#include "backend/globalStates.hpp"
+#include "backend/backendConnector.hpp"
+#include "jconf.hpp"
+#include "misc/console.hpp"
+#include "donate-level.hpp"
+#include "params.hpp"
+#include "misc/configEditor.hpp"
+#include "version.hpp"
+#include "misc/utility.hpp"
 
 #ifndef CONF_NO_HTTPD
-#	include "xmrstak/http/httpd.hpp"
+#	include "http/httpd.hpp"
 #endif
 
 #include <stdlib.h>
@@ -52,7 +52,7 @@
 #ifdef _WIN32
 #	define strcasecmp _stricmp
 #	include <windows.h>
-#	include "xmrstak/misc/uac.hpp"
+#	include "misc/uac.hpp"
 #endif // _WIN32
 
 void do_benchmark();
@@ -321,7 +321,7 @@ int main(int argc, char *argv[])
 	OpenSSL_add_all_digests();
 #endif
 
-	srand(time(0));
+	srand(time(nullptr));
 
 	using namespace xmrstak;
 

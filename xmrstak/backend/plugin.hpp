@@ -1,7 +1,7 @@
 #pragma once
 
-#include "xmrstak/misc/environment.hpp"
-#include "xmrstak/params.hpp"
+#include "misc/environment.hpp"
+#include "params.hpp"
 
 #include <thread>
 #include <atomic>
@@ -30,7 +30,7 @@ struct plugin
 	plugin(const std::string backendName, const std::string libName) : fn_starterBackend(nullptr), m_backendName(backendName)
 	{
 #ifdef WIN32
-		libBackend = LoadLibrary(TEXT((libName + ".dll").c_str()));
+		libBackend = nullptr; //LoadLibrary(TEXT((libName + ".dll").c_str()));
 		if(!libBackend)
 		{
 			std::cerr << "WARNING: "<< m_backendName <<" cannot load backend library: " << (libName + ".dll") << std::endl;

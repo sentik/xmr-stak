@@ -21,9 +21,9 @@
   *
   */
 
-#include "jconf.hpp"
-#include "xmrstak/misc/console.hpp"
-#include "xmrstak/misc/jext.hpp"
+#include "jconf_cpu.hpp"
+#include "misc/console.hpp"
+#include "misc/jext.hpp"
 
 #include <iostream>
 #include <stdio.h>
